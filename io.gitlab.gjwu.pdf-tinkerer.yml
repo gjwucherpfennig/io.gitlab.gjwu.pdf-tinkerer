@@ -23,7 +23,7 @@ modules:
   - name: PDF-Tinkerer
     buildsystem: simple
     build-commands:
-      - install -Dm644 PDF-Tinkerer-11.6-minimal.jar /app/lib/PDF-Tinkerer.jar
+      - install -Dm644 PDF-Tinkerer-12-minimal.jar /app/lib/PDF-Tinkerer.jar
       - mkdir -p /app/lib/sdk
       - mv lib/* /app/lib/sdk/
       - install -Dm755 PDF-Tinkerer-runner /app/bin/PDF-Tinkerer-runner
@@ -32,9 +32,9 @@ modules:
       - install -Dm644 io.gitlab.gjwu.pdf-tinkerer.metainfo.xml -t /app/share/metainfo/
     sources:
       - type: file
-        dest-filename: PDF-Tinkerer-11.6-minimal.jar
+        dest-filename: PDF-Tinkerer-12-minimal.jar
         url: https://gitlab.com/gjwu/pdf-tinkerer/-/package_files/308563375/download
-        sha256: 7bee38d7c2179a61334ac4642d45463d5ecaac869d5e33e0c0557d23e7e0ecd2
+        sha256: a076d63e07459b4dd23162fa95fc0be4af0c1f014247c18affb4b95c48a59aae
       - type: archive
         url: https://download2.gluonhq.com/openjfx/25.0.3/openjfx-25.0.3_linux-x64_bin-sdk.zip
         sha256: fbf3e214915dede36e791c07906abc1c32babc59bb26e2f41edbdcbc33400fb5
@@ -47,16 +47,16 @@ modules:
           - aarch64
       - type: file
         dest-filename: io.gitlab.gjwu.pdf-tinkerer.svg
-        url: https://gitlab.com/gjwu/pdf-tinkerer/-/raw/v11.6/PDF-Tinkerer.svg
+        url: https://gitlab.com/gjwu/pdf-tinkerer/-/raw/v12/PDF-Tinkerer.svg
         sha256: 2a753106da6cd6a63650d96871e7dc6aa4313e7dead622443e561367b777609f
       - type: file
         dest-filename: io.gitlab.gjwu.pdf-tinkerer.desktop
-        url: https://gitlab.com/gjwu/pdf-tinkerer/-/raw/v11.6/templates/io.gitlab.gjwu.pdf-tinkerer.desktop
-        sha256: 119ec0203b3b33743a50b7b08b56971df8325e869601db755acadeee919c3e01
+        url: https://gitlab.com/gjwu/pdf-tinkerer/-/raw/v12/templates/io.gitlab.gjwu.pdf-tinkerer.desktop
+        sha256: 2cd55095d552c82896accaf4da43317194f783f7808af8d086e957cb98b241a8
       - type: file
         dest-filename: io.gitlab.gjwu.pdf-tinkerer.metainfo.xml
-        url: https://gitlab.com/gjwu/pdf-tinkerer/-/raw/v11.6/templates/io.gitlab.gjwu.pdf-tinkerer.metainfo.xml
-        sha256: 099584aa9d8fe1392247ff1976ce634e47d48795a23d0799486f2af3b9f818b9
+        url: https://gitlab.com/gjwu/pdf-tinkerer/-/raw/v12/templates/io.gitlab.gjwu.pdf-tinkerer.metainfo.xml
+        sha256: 1ae6256cb4d2bd3da5c635a6fa72cf49db290703aa9d334865d6229faf27b511
       - type: script
         dest-filename: PDF-Tinkerer-runner
         commands:
